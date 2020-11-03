@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as slt
 import pickle
 from PIL import Image
 
@@ -31,13 +31,13 @@ def main():
     petal_length=slt.number_input('LENGTH OF PETAL', min_value=0.0, max_value=20.0,value=4.0, step=0.1)
     petal_width=slt.number_input('WIDTH OF PETAL', min_value=0.0, max_value=20.0,value=4.0, step=0.1)
     inputs=[[sepal_length,sepal_width,petal_length,petal_width]]
-    if st.button('Classify'):
+    if slt.button('Classify'):
         if option=='Linear Regression':
-            st.success(classify(lin_model.predict(inputs)))
+            slt.success(classify(lin_model.predict(inputs)))
         elif option=='Logistic Regression':
-            st.success(classify(log_model.predict(inputs)))
+            slt.success(classify(log_model.predict(inputs)))
         else:
-           st.success(classify(svm.predict(inputs)))
+           slt.success(classify(svm.predict(inputs)))
 
 
 if __name__=='__main__':
