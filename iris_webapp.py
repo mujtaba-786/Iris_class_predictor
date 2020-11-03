@@ -26,7 +26,7 @@ def main():
     slt.sidebar.info('Below is the link for wikipedia of iris')
     slt.sidebar.success('https://en.wikipedia.org/wiki/Iris_(plant)')
 
-    sepal_length=slt.number_input('LENGTH OF SEAL',  min_value=0.0, max_value=20.0,value=4.0, step=0.1)
+    sepal_length=slt.number_input('LENGTH OF SEPAL',  min_value=0.0, max_value=20.0,value=4.0, step=0.1)
     sepal_width=slt.number_input('WIDTH OF SEPAL', min_value=0.0, max_value=20.0,value=4.0, step=0.1)
     petal_length=slt.number_input('LENGTH OF PETAL', min_value=0.0, max_value=20.0,value=4.0, step=0.1)
     petal_width=slt.number_input('WIDTH OF PETAL', min_value=0.0, max_value=20.0,value=4.0, step=0.1)
