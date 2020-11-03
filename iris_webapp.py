@@ -21,6 +21,8 @@ def main():
 
 
     slt.title('IRIS CLASS PREDICTOR')
+    activities=['Linear Regression','Logistic Regression','SVM']
+    option=st.sidebar.selectbox('Which model would you like to use?',activities)
     slt.sidebar.info('Below is the link for wikipedia of iris')
     slt.sidebar.success('https://en.wikipedia.org/wiki/Iris_(plant)')
 
