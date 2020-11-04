@@ -16,7 +16,7 @@ def classify(num):
     else:
         return 'Virginica'
 def main():
-    img=Image.open('irisImage.png')
+    img=Image.open('irisImage.jpg')
     slt.sidebar.image(img)
 
 
