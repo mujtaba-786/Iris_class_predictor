@@ -34,11 +34,90 @@ def main():
     if slt.button('Classify'):
         if option=='Linear Regression':
             slt.success(classify(lin_model.predict(inputs)))
+            classIris=classify(lin_model.predict(inputs))
+            if classIris=='Setosa':
+                slt.text('BELOW IS THE IMAGE OF IRIS SETOSA')
+                img1=Image.open('irisSetosa.jpg')
+                slt.image(img1)
+                slt.text('Iris setosa, the bristle-pointed iris, is a species of flowering plant in the genus Iris of the family Iridaceae, it belongs the subgenus Limniris and the series Tripetalae. It is a rhizomatous perennial from a wide range across the Arctic sea, including Alaska, Maine, Canada (including British Columbia, Newfoundland, Quebec and Yukon), Russia (including Siberia), northeastern Asia, China, Korea and southwards to Japan. The plant has tall branching stems, mid green leaves and violet, purple-blue, violet-blue, blue, to lavender flowers. There are also plants with pink and white flowers.')
+            elif classIris=='Versicolor':
+                slt.text('BELOW IS THE IMAGE OF IRIS VERSICOLOR')
+                img1=Image.open('irisVersicolor.jpg')
+                slt.image(img1)
+                slt.text('Iris versicolor is also commonly known as the blue flag, harlequin blueflag, larger blue flag, northern blue flag, and poison flag, plus other variations of these names, and in Britain and Ireland as purple iris. It is a species of Iris native to North America, in the Eastern United States and Eastern Canada.')
+            else:
+                slt.text('BELOW IS THE IMAGE OF IRIS VIRGINICA')
+                img1=Image.open('irisVirginica.jpg')
+                slt.image(img1)
+                slt.text('Iris virginica, with the common name Virginia iris, is a perennial species of flowering plant, native to eastern North America. It is common along the coastal plain from Florida to Georgia in the Southeastern United States.')
+                
         elif option=='Logistic Regression':
             slt.success(classify(log_model.predict(inputs)))
+            classIris=classify(lin_model.predict(inputs))
+            if classIris=='Setosa':
+                slt.text('BELOW IS THE IMAGE OF IRIS SETOSA')
+                img1=Image.open('irisSetosa.jpg')
+                slt.image(img1)
+                slt.text('Iris setosa, the bristle-pointed iris, is a species of flowering plant in the genus Iris of the family Iridaceae, it belongs the subgenus Limniris and the series Tripetalae. It is a rhizomatous perennial from a wide range across the Arctic sea, including Alaska, Maine, Canada (including British Columbia, Newfoundland, Quebec and Yukon), Russia (including Siberia), northeastern Asia, China, Korea and southwards to Japan. The plant has tall branching stems, mid green leaves and violet, purple-blue, violet-blue, blue, to lavender flowers. There are also plants with pink and white flowers.')
+            elif classIris=='Versicolor':
+                slt.text('BELOW IS THE IMAGE OF IRIS VERSICOLOR')
+                img1=Image.open('irisVersicolor.jpg')
+                slt.image(img1)
+                slt.text('Iris versicolor is also commonly known as the blue flag, harlequin blueflag, larger blue flag, northern blue flag, and poison flag, plus other variations of these names, and in Britain and Ireland as purple iris. It is a species of Iris native to North America, in the Eastern United States and Eastern Canada.')
+            else:
+                slt.text('BELOW IS THE IMAGE OF IRIS VIRGINICA')
+                img1=Image.open('irisVirginica.jpg')
+                slt.image(img1)
+                slt.text('Iris virginica, with the common name Virginia iris, is a perennial species of flowering plant, native to eastern North America. It is common along the coastal plain from Florida to Georgia in the Southeastern United States.')
         else:
-           slt.success(classify(svm.predict(inputs)))
+            
+            slt.success(classify(svm.predict(inputs)))
+            classIris=classify(lin_model.predict(inputs))
+            if classIris=='Setosa':
+                slt.text('BELOW IS THE IMAGE OF IRIS SETOSA')
+                img1=Image.open('irisSetosa.jpg')
+                slt.image(img1)
+                slt.text('Iris setosa, the bristle-pointed iris, is a species of flowering plant in the genus Iris of the family Iridaceae, it belongs the subgenus Limniris and the series Tripetalae. It is a rhizomatous perennial from a wide range across the Arctic sea, including Alaska, Maine, Canada (including British Columbia, Newfoundland, Quebec and Yukon), Russia (including Siberia), northeastern Asia, China, Korea and southwards to Japan. The plant has tall branching stems, mid green leaves and violet, purple-blue, violet-blue, blue, to lavender flowers. There are also plants with pink and white flowers.')
+            elif classIris=='Versicolor':
+                slt.text('BELOW IS THE IMAGE OF IRIS VERSICOLOR')
+                img1=Image.open('irisVersicolor.jpg')
+                slt.image(img1)
+                slt.text('Iris versicolor is also commonly known as the blue flag, harlequin blueflag, larger blue flag, northern blue flag, and poison flag, plus other variations of these names, and in Britain and Ireland as purple iris. It is a species of Iris native to North America, in the Eastern United States and Eastern Canada.')
+            else:
+                slt.text('BELOW IS THE IMAGE OF IRIS VIRGINICA')
+                img1=Image.open('irisVirginica.jpg')
+                slt.image(img1)
+                slt.text('Iris virginica, with the common name Virginia iris, is a perennial species of flowering plant, native to eastern North America. It is common along the coastal plain from Florida to Georgia in the Southeastern United States.')
 
 
 if __name__=='__main__':
     main()
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
