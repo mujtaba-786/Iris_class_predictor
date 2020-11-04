@@ -16,8 +16,8 @@ def classify(num):
     else:
         return 'Virginica'
 def main():
-#     img=Image.open('iris.jpg')
-#     slt.sidebar.image(img)
+    img=Image.open('iris_image.png')
+    slt.sidebar.image(img)
 
 
     slt.title('IRIS CLASS PREDICTOR')
