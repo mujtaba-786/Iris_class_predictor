@@ -37,7 +37,7 @@ def main():
             classIris=classify(lin_model.predict(inputs))
             if classIris=='Setosa':
                 slt.text('BELOW IS THE IMAGE OF IRIS SETOSA')
-                img1=Image.open('irisSetosa.jpg')
+                img1=Image.open('irisSetosa.jpeg')
                 slt.image(img1)
                 slt.text('Iris setosa, the bristle-pointed iris, is a species of flowering plant in the genus Iris of the family Iridaceae, it belongs the subgenus Limniris and the series Tripetalae. It is a rhizomatous perennial from a wide range across the Arctic sea, including Alaska, Maine, Canada (including British Columbia, Newfoundland, Quebec and Yukon), Russia (including Siberia), northeastern Asia, China, Korea and southwards to Japan. The plant has tall branching stems, mid green leaves and violet, purple-blue, violet-blue, blue, to lavender flowers. There are also plants with pink and white flowers.')
             elif classIris=='Versicolor':
@@ -56,7 +56,7 @@ def main():
             classIris=classify(lin_model.predict(inputs))
             if classIris=='Setosa':
                 slt.text('BELOW IS THE IMAGE OF IRIS SETOSA')
-                img1=Image.open('irisSetosa.jpg')
+                img1=Image.open('irisSetosa.jpeg')
                 slt.image(img1)
                 slt.text('Iris setosa, the bristle-pointed iris, is a species of flowering plant in the genus Iris of the family Iridaceae, it belongs the subgenus Limniris and the series Tripetalae. It is a rhizomatous perennial from a wide range across the Arctic sea, including Alaska, Maine, Canada (including British Columbia, Newfoundland, Quebec and Yukon), Russia (including Siberia), northeastern Asia, China, Korea and southwards to Japan. The plant has tall branching stems, mid green leaves and violet, purple-blue, violet-blue, blue, to lavender flowers. There are also plants with pink and white flowers.')
             elif classIris=='Versicolor':
@@ -75,7 +75,7 @@ def main():
             classIris=classify(lin_model.predict(inputs))
             if classIris=='Setosa':
                 slt.text('BELOW IS THE IMAGE OF IRIS SETOSA')
-                img1=Image.open('irisSetosa.jpg')
+                img1=Image.open('irisSetosa.jpeg')
                 slt.image(img1)
                 slt.text('Iris setosa, the bristle-pointed iris, is a species of flowering plant in the genus Iris of the family Iridaceae, it belongs the subgenus Limniris and the series Tripetalae. It is a rhizomatous perennial from a wide range across the Arctic sea, including Alaska, Maine, Canada (including British Columbia, Newfoundland, Quebec and Yukon), Russia (including Siberia), northeastern Asia, China, Korea and southwards to Japan. The plant has tall branching stems, mid green leaves and violet, purple-blue, violet-blue, blue, to lavender flowers. There are also plants with pink and white flowers.')
             elif classIris=='Versicolor':
