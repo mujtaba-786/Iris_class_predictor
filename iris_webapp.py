@@ -88,7 +88,8 @@ def main():
                 img1=Image.open('irisVirginica.jpg')
                 slt.image(img1)
                 slt.text('Iris virginica, with the common name Virginia iris, is a perennial species of flowering plant, native to eastern North America. It is common along the coastal plain from Florida to Georgia in the Southeastern United States.')
-
+        slt.title('DIABETES PREDICTION')
+        
 
 if __name__=='__main__':
     main()
