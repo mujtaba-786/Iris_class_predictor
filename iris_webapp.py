@@ -16,7 +16,7 @@ def classify(num):
     else:
         return 'Virginica'
 def main():
-    slt.markdown('<style>body{background-color: Green;}</style>',unsafe_allow_html=True)
+#     slt.markdown('<style>body{background-color: Green;}</style>',unsafe_allow_html=True)
     img=Image.open('irisImage.jpg')
     slt.sidebar.image(img)
 
