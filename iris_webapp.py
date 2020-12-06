@@ -97,14 +97,14 @@ def main():
     
 #         slt.sidebar.image(img)
     slt.title('2. DIABETES PREDICTION')
-    age =           slt.sidebar.number_input("Age in Years", 1, 150, 25, 1)
-    pregnancies =   slt.sidebar.number_input("Number of Pregnancies", 0, 20, 0, 1)
-    glucose =       slt.sidebar.slider("Glucose Level", 0, 200, 25, 1)
-    skinthickness = slt.sidebar.slider("Skin Thickness", 0, 99, 20, 1)
-    bloodpressure = slt.sidebar.slider('Blood Pressure', 0, 122, 69, 1)
-    insulin =       slt.sidebar.slider("Insulin", 0, 846, 79, 1)
-    bmi =           slt.sidebar.slider("BMI", 0.0, 67.1, 31.4, 0.1)
-    dpf =           slt.sidebar.slider("Diabetics Pedigree Function", 0.000, 2.420, 0.471, 0.001)
+    age =           slt.number_input("Age in Years", 1, 150, 25, 1)
+    pregnancies =   slt.number_input("Number of Pregnancies", 0, 20, 0, 1)
+    glucose =       slt.slider("Glucose Level", 0, 200, 25, 1)
+    skinthickness = slt.slider("Skin Thickness", 0, 99, 20, 1)
+    bloodpressure = slt.slider('Blood Pressure', 0, 122, 69, 1)
+    insulin =       slt.slider("Insulin", 0, 846, 79, 1)
+    bmi =           slt.slider("BMI", 0.0, 67.1, 31.4, 0.1)
+    dpf =           slt.slider("Diabetics Pedigree Function", 0.000, 2.420, 0.471, 0.001)
 #     row = [pregnancies, glucose, bloodpressure, skinthickness, insulin, bmi, dpf, age]
     if (slt.button('Find Health Status')):
 #             feat_cols = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
