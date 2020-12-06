@@ -19,8 +19,8 @@ def main():
 #     slt.markdown('<style>body{background-color: Green;}</style>',unsafe_allow_html=True)
     img=Image.open('irisImage.jpg')
     slt.sidebar.image(img)
-    img1=Image.open('diabetesimage.jpg')
-    slt.sidebar.image(img1)
+#     img1=Image.open('diabetesimage.jpg')
+#     slt.sidebar.image(img1)
     
 
 
