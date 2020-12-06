@@ -19,9 +19,12 @@ def main():
 #     slt.markdown('<style>body{background-color: Green;}</style>',unsafe_allow_html=True)
     img=Image.open('irisImage.jpg')
     slt.sidebar.image(img)
+    img1=Image.open('diabetesimage.jpg')
+    slt.sidebar.image(img1)
+    
 
 
-    slt.title('IRIS CLASS PREDICTOR')
+    slt.title('1. IRIS CLASS PREDICTOR')
     activities=['Linear Regression','Logistic Regression','SVM']
     option=slt.sidebar.selectbox('Which model would you like to use?',activities)
     slt.sidebar.info('Below is the link for wikipedia of iris')
@@ -89,8 +92,28 @@ def main():
                 img1=Image.open('irisVirginica.jpg')
                 slt.image(img1)
                 slt.text('Iris virginica, with the common name Virginia iris, is a perennial species of flowering plant, native to eastern North America. It is common along the coastal plain from Florida to Georgia in the Southeastern United States.')
-        slt.sidebar.image(img)
-        slt.title('DIABETES PREDICTION')
+    g
+#         slt.sidebar.image(img)
+    slt.title('2. DIABETES PREDICTION')
+    age =           slt.sidebar.number_input("Age in Years", 1, 150, 25, 1)
+    pregnancies =   slt.sidebar.number_input("Number of Pregnancies", 0, 20, 0, 1)
+    glucose =       slt.sidebar.slider("Glucose Level", 0, 200, 25, 1)
+    skinthickness = slt.sidebar.slider("Skin Thickness", 0, 99, 20, 1)
+    bloodpressure = slt.sidebar.slider('Blood Pressure', 0, 122, 69, 1)
+    insulin =       slt.sidebar.slider("Insulin", 0, 846, 79, 1)
+    bmi =           slt.sidebar.slider("BMI", 0.0, 67.1, 31.4, 0.1)
+    dpf =           slt.sidebar.slider("Diabetics Pedigree Function", 0.000, 2.420, 0.471, 0.001)
+#     row = [pregnancies, glucose, bloodpressure, skinthickness, insulin, bmi, dpf, age]
+    if (slt.button('Find Health Status')):
+#             feat_cols = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
+#             sc, model = load('models/scaler.joblib', 'models/model.joblib')
+#             result = inference(row, sc, model, feat_cols)
+#             if int(result)==0:
+#                 slt.success('You do not have diabetes')
+#             else:
+        slt.success('You have diabetes')
+
+    
         
         
 
