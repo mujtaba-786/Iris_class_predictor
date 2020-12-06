@@ -29,6 +29,8 @@ def main():
     option=slt.sidebar.selectbox('Which model would you like to use?',activities)
     slt.sidebar.info('Below is the link for wikipedia of iris')
     slt.sidebar.success('https://en.wikipedia.org/wiki/Iris_(plant)')
+    img1=Image.open('diabetesimage.jpg')
+    slt.sidebar.image(img1)
 
     sepal_length=slt.number_input('LENGTH OF SEPAL',  min_value=0.0, max_value=20.0,value=4.0, step=0.1)
     sepal_width=slt.number_input('WIDTH OF SEPAL', min_value=0.0, max_value=20.0,value=4.0, step=0.1)
@@ -92,7 +94,7 @@ def main():
                 img1=Image.open('irisVirginica.jpg')
                 slt.image(img1)
                 slt.text('Iris virginica, with the common name Virginia iris, is a perennial species of flowering plant, native to eastern North America. It is common along the coastal plain from Florida to Georgia in the Southeastern United States.')
-    g
+    
 #         slt.sidebar.image(img)
     slt.title('2. DIABETES PREDICTION')
     age =           slt.sidebar.number_input("Age in Years", 1, 150, 25, 1)
